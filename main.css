@@ -9,7 +9,7 @@
 .center {
     margin: auto;
     width: 100%;
-    padding: 10px;
+    padding-top: 20px;
     display: grid;
     justify-items: center;
     align-items: center;
@@ -19,7 +19,7 @@
     margin: auto;
     width: 60%;
     font-size: 60px;
-    padding: 10px;
+    padding-top: 20px;
     text-align: center;
     display: grid;
     justify-items: center;
@@ -30,8 +30,8 @@
     margin: auto;
     text-align: center;
     width: 60%;
+    padding-top: 20px;
     font-size: 30px;
-    padding: 10px;
     display: grid;
     justify-items: center;
     align-items: center;
