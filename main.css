@@ -80,13 +80,6 @@
     grid-template-columns: 1fr;
   }
 
-  .grid-container3{
-    align-self: center;
-    width: 100%;
-    display: grid;
-    grid-template-columns: 1fr, 1fr, 1fr, 1fr, 1fr, 1fr, 1fr;
-  }
-
   .grid-item{
     padding: 30px;
     display: grid;
