@@ -37,19 +37,6 @@
     align-items: center;
 }
 
-.button-container {
-    width: 520px;
-    overflow-y: auto;
-}
-
-.button-container > a {
-    width: 50px;
-    height: 50px;
-    float: left;
-    background: lightgray;   
-    margin: 30px;
-}
-
 
 .button {
     background-color: #4CAF50; /* Green */
@@ -69,7 +56,6 @@
 }
 
 .button:active {
-  background-color: #3e8e41;
   box-shadow: 0 5px #666;
   transform: translateY(4px);
 }
@@ -86,7 +72,21 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
   }
-  
+
+.grid-container2{
+    align-self: center;
+    width: 320px;
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .grid-container3{
+    align-self: center;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr, 1fr, 1fr, 1fr, 1fr, 1fr, 1fr;
+  }
+
   .grid-item{
     padding: 30px;
     display: grid;

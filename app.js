@@ -1,6 +1,6 @@
 'use strict'
 
-var action_list = [1, 2, 3, 4, 5, 6, 7, 8];
+var action_list = [0, 0, 0, 0, 0, 0, 0, 0];
 var rewardlist = [0, 0, 0, 0, 0, 0, 0, 0];
 var cnt = 0
 
@@ -56,20 +56,22 @@ function reward(number) {
                     ret = 5
                 }
         }
-        rotateRight(rewardlist)
-        rewardlist[0] = ret
-
         if (JSON.stringify(action_list.slice(0,6)) === JSON.stringify([1, 2, 3, 2, 3, 2])){
             ret = 100
         }
         if (JSON.stringify(action_list.slice(0,7)) === JSON.stringify([1, 0, 3, 2, 3, 2, 1])){
             ret = 500
         }
+
+        rotateRight(rewardlist)
+        rewardlist[0] = ret
+
         document.getElementById("avgreward").innerHTML = String(mean(rewardlist));
         document.getElementById("reward").innerHTML = String(ret);
+        document.getElementById("state").innerHTML = String(Array.from(action_list).reverse());
     }
 }
-  
+
 
 
 document.getElementById("b0").addEventListener('click', function() {
